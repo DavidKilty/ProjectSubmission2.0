@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--fonts from awesome and google-->
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Memory Number Game</title>
+
+</head>
+<body>
+    <h1 class="heading">
+        <img class="logo" src="assets/images/question-mark-logo.png" alt="logo"> Renumber? 
+    </h1>
+
+
+    <div class="game-area">
+        <div class="controls-area">
+            <button data-type="sixty" class="btn btn--big btn--green">
+                <i class="fas fa-easiest"></i>
+            </button>
+            <button data-type="fourty" class="btn btn--big btn--blue">
+                <i class="fas fa-easy"></i>
+            </button>
+            <button data-type="twenty" class="btn btn--big btn--orange">
+                <i class="fas fa-hard"></i>
+            </button>
+            <button  data-type="fifteen" class="btn btn--big btn--red">
+                <i class="fas fa-hardest"></i>
+            </button>
+        
+        </div>
+        <div class="question-area">
+            <span id="operand1">1</span>
+            <span id="operand2">2</span>
+            <span id="operand3">3</span>
+            <span id="operand4">4</span>
+            <span id="operand5">5</span>
+            <span id="operand6">6</span>
+            <span id="operand7">7</span>
+            <span id="operand8">8</span>
+            <span id="operand9">9</span>
+            <span>=</span>
+            <p class="answer-message">Enter Answer:</p>
+            <input id="answer-box" type="number">
+        </div>
+        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+    </div>
+
+    <div class="score-area">
+        <p class="scores">Correct Answers <span id="score">0</span></p>
+        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
