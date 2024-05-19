@@ -102,7 +102,7 @@ body {
 .btn--big {
     padding-top: 10px;
     border-radius: 50%;
-    background-color: white;
+    background-color: white 
     border: 10px solid;
     width: 100px;
     height: 100px;
@@ -122,6 +122,7 @@ body {
 .btn--blue {
     border-color: blue;
     color: blue;
+    
 }
 
 .btn--blue:active,
@@ -155,6 +156,7 @@ body {
 .btn--green {
     border-color: green;
     color: green;
+    
 }
 
 .btn--green:active,
