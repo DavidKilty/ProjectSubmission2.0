@@ -47,6 +47,8 @@ body {
 .controls-area {
     width: 85%;
     margin: 30px auto;
+    display: flex;
+    justify-content: space-around; /* Align buttons horizontally */
 }
 
 #score {
@@ -79,12 +81,14 @@ body {
 }
 
 .btn {
-    width: 220px;
-    height: 60px;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn:focus {
@@ -92,30 +96,24 @@ body {
 }
 
 .btn--big {
-    padding-top: 10px;
     border-radius: 50%;
     background-color: white;
     border: 10px solid;
     width: 100px;
     height: 100px;
     font-size: 3.2rem;
-    margin: 0 30px;
+    margin: 0 15px;
     transition: all 0.5s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .btn--big i {
     font-size: 2.5rem;
 }
 
-.btn--big span {
-    font-size: 1.5rem;
+.btn-label {
+    font-size: 1.5rem; /* Increase font size */
     color: #445361;
     margin-top: 10px;
-    margin-bottom: 10px; /* Add margin below the number */
 }
 
 .btn--blue {
@@ -177,20 +175,22 @@ body {
 @media (max-width: 414px) {
     .controls-area {
         width: 100%;
+        flex-direction: column;
     }
 
     .btn--big {
-        margin: 0 10px;
-        padding: 5px;
-        border: 5px solid;
-        width: 50px;
-        height: 50px;
+        margin: 10px 0;
+        width: 70px;
+        height: 70px;
         font-size: 1.5rem;
     }
 
-    .btn--big span {
-        font-size: 0.6rem;
-        margin-top: 5px;
+    .btn--big i {
+        font-size: 1.2rem;
+    }
+
+    .btn-label {
+        font-size: 0.8rem;
     }
 
     .question-area {
@@ -210,8 +210,9 @@ body {
         display: block;
         margin: 0 auto;
     }
+
     .btn--gray {
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     .score-area {

@@ -1,11 +1,10 @@
-
-
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".controls-area button");
     const answerBox = document.getElementById("answer-box");
     const correctScore = document.getElementById("score");
     const incorrectScore = document.getElementById("incorrect");
     let generatedNumber = "";
+    let correctCount = 0;
 
     buttons.forEach(function(button) {
         button.addEventListener("click", function() {
@@ -37,6 +36,18 @@ document.addEventListener("DOMContentLoaded", function() {
             answerBox.focus();
         }, time * 1000);
 
+
+    function generateAndDisplayNumber(time) {
+        generatedNumber = generateRandomNumber();
+        const questionArea = document.querySelector(".question-area");
+        questionArea.innerHTML = `<span>${generatedNumber}</span>`;
+
+        setTimeout(function() {
+            questionArea.innerHTML = 'What was the order?';
+            answerBox.disabled = false;
+            answerBox.focus();
+        }, time * 1000);
+
         answerBox.disabled = true;
         answerBox.value = '';
     }
@@ -46,8 +57,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (userAnswer === generatedNumber) {
             correctScore.textContent = parseInt(correctScore.textContent) + 1;
+            correctCount++;
+            if (correctCount >= 99) {
+                alert('Congratulations!');
+                correctCount = 0;
+                correctScore.textContent = '0';
+                incorrectScore.textContent = '0';
+            }
         } else {
             incorrectScore.textContent = parseInt(incorrectScore.textContent) + 1;
+            correctCount = 0;
         }
 
         answerBox.value = '';
