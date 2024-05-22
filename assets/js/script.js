@@ -1,13 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
+
+
+document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".controls-area button");
     const answerBox = document.getElementById("answer-box");
     const correctScore = document.getElementById("score");
     const incorrectScore = document.getElementById("incorrect");
     let generatedNumber = "";
 
-    buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            const time = parseInt(button.querySelector("span").textContent);
+    buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            const time = parseInt(button.querySelector(".btn-label").textContent);
             generateAndDisplayNumber(time);
         });
     });
@@ -29,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const questionArea = document.querySelector(".question-area");
         questionArea.innerHTML = `<span>${generatedNumber}</span>`;
 
-        setTimeout(() => {
+        setTimeout(function() {
             questionArea.innerHTML = 'What was the order?';
             answerBox.disabled = false;
             answerBox.focus();
@@ -50,4 +52,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
         answerBox.value = '';
         answerBox.disabled = true;
-
+    }
+});

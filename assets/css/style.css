@@ -101,13 +101,21 @@ body {
     font-size: 3.2rem;
     margin: 0 30px;
     transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn--big i {
+    font-size: 2.5rem;
 }
 
 .btn--big span {
-    display: block;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #445361;
     margin-top: 10px;
+    margin-bottom: 10px; /* Add margin below the number */
 }
 
 .btn--blue {
