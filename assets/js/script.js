@@ -36,18 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
             answerBox.focus();
         }, time * 1000);
 
-
-    function generateAndDisplayNumber(time) {
-        generatedNumber = generateRandomNumber();
-        const questionArea = document.querySelector(".question-area");
-        questionArea.innerHTML = `<span>${generatedNumber}</span>`;
-
-        setTimeout(function() {
-            questionArea.innerHTML = 'What was the order?';
-            answerBox.disabled = false;
-            answerBox.focus();
-        }, time * 1000);
-
         answerBox.disabled = true;
         answerBox.value = '';
     }

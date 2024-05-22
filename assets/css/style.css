@@ -48,7 +48,7 @@ body {
     width: 85%;
     margin: 30px auto;
     display: flex;
-    justify-content: space-around; /* Align buttons horizontally */
+    justify-content: space-around;
 }
 
 #score {
@@ -111,7 +111,7 @@ body {
 }
 
 .btn-label {
-    font-size: 1.5rem; /* Increase font size */
+    font-size: 1.5rem;
     color: #445361;
     margin-top: 10px;
 }
