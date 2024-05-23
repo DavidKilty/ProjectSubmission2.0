@@ -1,39 +1,93 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Memory Number Game
 
-Welcome,
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Description
+This project is a web-based memory number game where users are presented with a random 9-digit number for a specific amount of time and then must recall and input the number correctly. The game aims to test and improve the user's visual numerical memory.
 
-## Codeanywhere Reminders
+## Installation
+To install and run this project locally:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/DavidKilty/ProjectSubmission2.0.git
+2. Navigate to the project directory:
+ cd ProjectSubmission2.0
+3. Open index.html in your web browser.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+   
+## Usage
 
-`python3 -m http.server`
+A) Click on one of the time buttons (60, 45, 30, 15 seconds).
+B) Memorize the 9-digit number that appears.
+C) Enter the number in the answer box after the time elapses.
+D) Click the "Submit Answer" button to check your answer.
+E) The game will keep track of your correct and incorrect answers.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Code References
 
-`http_server`
+- JavaScript Event Listeners and DOM Manipulation:
+  -Referenced from MDN Web Docs for handling button clicks and updating DOM elements.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  Example usage in script.js:
+javascript: 
+     
+document.addEventListener("DOMContentLoaded", function() {
+    // Code for initializing event listeners and DOM elements
+});
+- Generating Random Numbers without Repetition:
+  -Referenced from W3Schools JavaScript Random for generating unique random numbers.
+  
+ Example usage in script.js:
+ 
+javascript: 
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+function generateRandomNumber() {
+    const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let number = '';
+    while (number.length < 9) {
+        const randomIndex = Math.floor(Math.random() * digits.length);
+        number += digits.splice(randomIndex, 1);
+    }
+    return number;
+}
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## HTML and CSS Structure:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- Referenced from W3Schools HTML and W3Schools CSS for creating the basic layout and styling of the webpage.
+  
+ -Example usage in index.html and style.css:
+ 
+html
+Copy code
+<div class="game-area">
+    <div class="controls-area">
+        <!-- Button elements -->
+    </div>
+    <div class="question-area">
+        <span>What was the order?</span>
+        <p class="answer-message">Enter Answer:</p>
+        <input id="answer-box" type="number" disabled>
+    </div>
+    <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+</div>
+css
+Copy code
+ answer-box {
+    border: 1px solid #445361;
+    color: #445361;
+    display: block;
+    height: 40px;
+    width: 80px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
+## Credits
 
-Happy coding!
+Icons: FontAwesome
+Fonts: Google Fonts
+License: This project is licensed under the MIT License - see the LICENSE.md file for details.
+
