@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+    console.log("Script loaded successfully"); // Add this line to verify the script is loaded
+
     const buttons = document.querySelectorAll(".controls-area button");
     const answerBox = document.getElementById("answer-box");
     const correctScore = document.getElementById("score");
@@ -34,12 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
         
         answerBox.value = '';
         answerBox.disabled = true;
-        answerBox.style.display = 'block'; 
+        answerBox.style.display = 'block'; // Ensure the answer box is visible
 
         setTimeout(function() {
             questionArea.innerHTML = 'What was the order?';
             answerBox.disabled = false;
-            answerBox.style.display = 'block'; 
+            answerBox.style.display = 'block'; // Ensure the answer box is visible again
             answerBox.focus();
             console.log('Answer box enabled');
         }, time * 1000);
