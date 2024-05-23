@@ -29,15 +29,17 @@ document.addEventListener("DOMContentLoaded", function() {
         generatedNumber = generateRandomNumber();
         const questionArea = document.querySelector(".question-area");
         questionArea.innerHTML = `<span>${generatedNumber}</span>`;
+        
+        answerBox.value = '';
+        answerBox.disabled = true;
+        answerBox.style.display = 'block'; // Ensure the answer box is visible
 
         setTimeout(function() {
             questionArea.innerHTML = 'What was the order?';
             answerBox.disabled = false;
+            answerBox.style.display = 'block'; // Ensure the answer box is visible again
             answerBox.focus();
         }, time * 1000);
-
-        answerBox.disabled = true;
-        answerBox.value = '';
     }
 
     function checkAnswer() {
