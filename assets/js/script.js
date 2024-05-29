@@ -29,24 +29,17 @@ document.addEventListener("DOMContentLoaded", function() {
         generatedNumber = generateRandomNumber();
         const questionArea = document.querySelector(".question-area");
         questionArea.innerHTML = `<span>${generatedNumber}</span>`;
-        
-        answerBox.value = '';
-        answerBox.disabled = true;
-        answerBox.style.display = 'block'; // Ensure the answer box is visible
 
-        // Remove existing answer input box if any
         let existingInputBox = document.getElementById("answer-box");
         if (existingInputBox) {
             existingInputBox.remove();
         }
 
-        // Disable the submit button during the display time
         const submitButton = document.querySelector("[data-type='submit']");
         submitButton.disabled = true;
 
         setTimeout(function() {
             questionArea.innerHTML = 'What was the order?';
-<<<<<<< HEAD
             let newInputBox = document.createElement("input");
             newInputBox.id = "answer-box";
             newInputBox.type = "number";
@@ -56,10 +49,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
             submitButton.disabled = false;
             console.log('Answer box recreated and enabled');
-=======
-            answerBox.disabled = false;
-            answerBox.focus();
->>>>>>> refs/remotes/origin/main
         }, time * 1000);
     }
 
