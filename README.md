@@ -119,28 +119,23 @@ HTML and CSS structure:
 
 I deployed it multiple times to reflect on my work.
 
-I used the below validator by entering the code manually: 
+I used the below validators: 
 
-For HTML, [Click](https://validator.w3.org/#validate_by_input)
+For HTML, [Click]([https://validator.w3.org/#validate_by_input](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavidkilty.github.io%2FProjectSubmission2.0%2F))
 
-This returned 4 errors with my buttons, but the page still works as desired so I did not remedy issues. 
+Originally, this returned 4 errors with my buttons, that they could not be children of Divs. So I changed the elements around the buttons, to Spans instead of Divs. That left me with a less desriable aestetic. But then, it shows four errors that Divs  But did not impact the function of the site. 
 
-For CSS, [](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+For CSS, [Click](https://jigsaw.w3.org/css-validator/#validate_by_input) 
 
 There were no issues found 
 
-Ultimately, I still have a passable accessibility score.
-
+For JS, [Click](https://jshint.com/)
 
 ### Credits
 
 Icons: FontAwesome 
-
 Fonts: Google Fonts
-
 License: This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-I used the Code Institute guides and materials exhaustively. 
-
-I often used the Slack channel to see other students' tips on fixing issues and Googled problems, relying on such blogs as W3Schools, StackOverflow, and MDNWebDocs
+I used the Code Institute guides and materials exhaustively. I often used the Slack channel to see other students' tips on fixing issues and Googled problems, relying on such blogs as W3Schools, StackOverflow, and MDNWebDocs
 
