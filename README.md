@@ -65,31 +65,33 @@ JavaScript Event Listeners and DOM Manipulation:
 
  - Referenced from MDN Web Docs for handling button clicks and updating DOM elements.
 
-```
+ ```
  document.addEventListener("DOMContentLoaded", function() {
- }); '''
-
+ });
+```
 
  Generating Random Numbers without Repetition:
  
  - Referenced from W3Schools JavaScript Random for generating unique random numbers.
 
- ```bash
-  function generateRandomNumber() {
-  const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  let number = '';
-  while (number.length < 9) {
-  const randomIndex = Math.floor(Math.random() * digits.length);
-  number += digits.splice(randomIndex, 1);
-  }
-  return number;
-  }
+ ```
+   function generateRandomNumber() {
+   const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+   let number = '';
+   while (number.length < 9) {
+   const randomIndex = Math.floor(Math.random() * digits.length);
+   number += digits.splice(randomIndex, 1);
+   }
+   return number;
+   } 
+```
 
 HTML and CSS structure:
 
 - Referenced from W3Schools HTML and W3Schools CSS for creating the basic layout and styling of the webpage.
  
- "<div class="game-area">
+ ```
+  <div class="game-area">
   <div class="controls-area">
   </div>
   <div class="question-area">
@@ -99,8 +101,10 @@ HTML and CSS structure:
   </div>
   <button data-type="submit" class="btn btn--gray">Submit Answer</button>
   </div>"
+```
 
-  "#answer-box {
+```
+   #answer-box {
    border: 1px solid #445361;
    color: #445361;
    display: block;
@@ -108,7 +112,8 @@ HTML and CSS structure:
    width: 80px;
    font-size: 1.2rem;
    margin-top: 10px;
-   }"
+   }
+```
 
 ### Validator Teting
 
