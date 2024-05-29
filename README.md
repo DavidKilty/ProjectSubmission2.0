@@ -136,6 +136,16 @@ Function with the largest signature take 1 arguments, while the median is 0.
 Largest function has 16 statements in it, while the median is 9.
 The most complex function has a cyclomatic complexity value of 3 while the median is 1.
 
+## Deployment
+
+ The site was deployed to GitHub pages. The steps to deploy are as follows: 
+ 
+  A) In the GitHub repository, navigate to the Settings tab
+  B) From the source section drop-down menu, select the Master Branch
+  C) Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here https://github.com/DavidKilty/ProjectSubmission2.0.git
+
 ### Credits
 
 Icons: FontAwesome 
