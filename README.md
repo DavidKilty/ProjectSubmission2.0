@@ -52,6 +52,7 @@ HTML and CSS structure:
 
 - Referenced from W3Schools HTML and W3Schools CSS for creating the basic layout and styling of the webpage.
  
+>
  <div class="game-area">
     <div class="controls-area">
         <!-- Button elements -->
@@ -63,7 +64,7 @@ HTML and CSS structure:
     </div>
     <button data-type="submit" class="btn btn--gray">Submit Answer</button>
 </div>
-
+>
 #answer-box {
     border: 1px solid #445361;
     color: #445361;
