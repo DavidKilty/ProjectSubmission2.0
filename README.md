@@ -8,7 +8,7 @@
 ## Description
 This project is a web-based memory number game where users are presented with a random 9-digit number for a specific amount of time and then must recall and input the number correctly. The game aims to test and improve the user's visual numerical memory. Based from a game my mother created for me as a child, it is aimed at those who want to improve their memory and get creative with how they do so. But, also, it serves as a great tool to show how JavaScript can be used and implemented.
 
-CONTACT IMG
+![contact image](assets/images/fullscreenshot.png)
 
 ## Installation
 
@@ -26,25 +26,25 @@ To install and run this project locally:
 
 Upon viewing the page, the user will see this as the title of my game. 
 
-CONTACT IMG
+![contact image](assets/images/logoheader.png)
 
 ### Game section
 
 This section will allow you to interact with the game, using the different timer buttons. The user, or player, will be able to set the time of how long they get to see the number which they have to remember. It sounds easy, but try doing it for 15 seconds up to 99 times in a row. 
 
-CONTACT IMG
+![contact image](assets/images/buttons.png)
 
 ### Answer section
 
 The answer box then appears after the timer is over and this is where you need to input the number. Yes, you could cheat and copy the number the Betim and input that the box, But where would the Fun be in that? 
 
-CONTACT IMG
+![contact image](assets/images/zoominanswerbox.png)
 
 ### Score section  
 
 This is where the user sees their scores. 99 is the goal of course . 
 
-CONTACT IMG
+![contact image](assets/images/fullscreenshotwithanswerbox.png)
    
 ## Usage
 
