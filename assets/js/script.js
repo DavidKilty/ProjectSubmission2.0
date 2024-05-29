@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (userAnswer === generatedNumber) {
             correctScore.textContent = parseInt(correctScore.textContent) + 1;
+            alert ('That was right!')
             correctCount++;
             if (correctCount >= 99) {
                 alert('Congratulations!');

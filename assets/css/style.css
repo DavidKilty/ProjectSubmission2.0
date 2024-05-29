@@ -18,11 +18,9 @@ body {
 }
 
 .game-area {
-    background-color: #78dcf0;
+    background-color: rgba(187, 255, 248, 0.565);
     box-sizing: border-box;
     width: 85%;
-    height: 65vh;
-    max-height: 450px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -223,7 +221,8 @@ body {
     
 
     .btn--gray {
-        margin-top: 700px;
+        margin-top: 700px;        
+
     }
 
     .score-area {
