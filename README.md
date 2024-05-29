@@ -121,8 +121,7 @@ I deployed it multiple times to reflect on my work.
 
 I used the below validators: 
 
-For HTML, [Click]
-(https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavidkilty.github.io%2FProjectSubmission2.0%2F)
+For HTML, [Click](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavidkilty.github.io%2FProjectSubmission2.0%2F)
 
 Originally, this returned 4 errors with my buttons, that they could not be children of Divs. So I changed the elements around the buttons, to Spans instead of Divs. That left me with a less desriable aestetic. But then, it shows four errors that Divs are not allowed as child of elements of Buttons or Spans. But did not impact the function of the site. 
 
