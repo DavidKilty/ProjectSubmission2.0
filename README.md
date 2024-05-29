@@ -29,9 +29,9 @@ JavaScript Event Listeners and DOM Manipulation:
 
  - Referenced from MDN Web Docs for handling button clicks and updating DOM elements.
      
-document.addEventListener("DOMContentLoaded", function() {
-
-   });
+> document.addEventListener("DOMContentLoaded", function() {
+>
+>   });
    
  Generating Random Numbers without Repetition:
  
@@ -53,27 +53,27 @@ HTML and CSS structure:
 - Referenced from W3Schools HTML and W3Schools CSS for creating the basic layout and styling of the webpage.
  
 >
- <div class="game-area">
-    <div class="controls-area">
-        <!-- Button elements -->
-    </div>
-    <div class="question-area">
-        <span>What was the order?</span>
-        <p class="answer-message">Enter Answer:</p>
-        <input id="answer-box" type="number" disabled>
-    </div>
-    <button data-type="submit" class="btn btn--gray">Submit Answer</button>
-</div>
->
-#answer-box {
-    border: 1px solid #445361;
-    color: #445361;
-    display: block;
-    height: 40px;
-    width: 80px;
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
+> <div class="game-area">
+>   <div class="controls-area">
+>       <!-- Button elements -->
+>  </div>
+>  <div class="question-area">
+>  <span>What was the order?</span>
+>      <p class="answer-message">Enter Answer:</p>
+>       <input id="answer-box" type="number" disabled>
+>  </div>
+>  <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+> </div>
+
+> #answer-box {
+>  border: 1px solid #445361;
+>   color: #445361;
+>   display: block;
+>   height: 40px;
+>   width: 80px;
+>   font-size: 1.2rem;
+>   margin-top: 10px;
+> }
 
  
 ### Credits
