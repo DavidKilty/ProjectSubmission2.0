@@ -1,7 +1,7 @@
 body {
     background-color: rgba(187, 255, 248, 0.565);
     font-family: "Permanent Marker", cursive;
-    font-weight: 400;
+    font-weight: 200;
     color: #445361;
     text-align: center;
     font-style: normal;
@@ -55,12 +55,12 @@ body {
 
 #score {
     color: green;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 #incorrect {
     color: red;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .answer-message {
