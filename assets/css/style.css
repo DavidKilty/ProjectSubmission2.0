@@ -18,7 +18,7 @@ body {
 }
 
 .game-area {
-    background-color: #E6ECF0;
+    background-color: #78dcf0;
     box-sizing: border-box;
     width: 85%;
     height: 65vh;
@@ -120,8 +120,8 @@ body {
 }
 
 .btn--blue {
-    border-color: rgb(255, 0, 0);
-    color: rgb(255, 0, 0);
+    border-color: rgb(17, 0, 255);
+    color: rgb(17, 0, 255);
 }
 
 .btn--blue:active,
@@ -131,8 +131,8 @@ body {
 }
 
 .btn--orange {
-    border-color: rgb(255, 0, 102);
-    color: rgb(255, 0, 102);
+    border-color: rgb(17, 0, 255);
+    color: rgb(17, 0, 255);
 }
 
 .btn--orange:active,
@@ -142,8 +142,8 @@ body {
 }
 
 .btn--red {
-    border-color: rgb(255, 0, 179);
-    color: rgb(255, 0, 179);
+    border-color: rgb(17, 0, 255);
+    color: rgb(17, 0, 255);
 }
 
 .btn--red:active,
@@ -153,8 +153,8 @@ body {
 }
 
 .btn--green {
-    border-color: rgb(122, 0, 128);
-    color: rgb(122, 0, 128);
+    border-color: rgb(17, 0, 255);
+    color: rgb(17, 0, 255);
 }
 
 .btn--green:active,
@@ -199,6 +199,8 @@ body {
     .question-area {
         padding: 10% 0;
         width: 100%;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
     }
 
     .question-area span {
@@ -221,7 +223,7 @@ body {
     
 
     .btn--gray {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .score-area {
