@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("Script loaded successfully"); // Add this line to verify the script is loaded
-
     const buttons = document.querySelectorAll(".controls-area button");
-    const answerBox = document.getElementById("answer-box");
     const correctScore = document.getElementById("score");
     const incorrectScore = document.getElementById("incorrect");
     let generatedNumber = "";
@@ -11,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     buttons.forEach(function(button) {
         button.addEventListener("click", function() {
             const time = parseInt(button.querySelector(".btn-label").textContent);
-            console.log(`Button clicked: ${time} seconds`);
             generateAndDisplayNumber(time);
         });
     });
@@ -33,21 +29,35 @@ document.addEventListener("DOMContentLoaded", function() {
         generatedNumber = generateRandomNumber();
         const questionArea = document.querySelector(".question-area");
         questionArea.innerHTML = `<span>${generatedNumber}</span>`;
-        
-        answerBox.value = '';
-        answerBox.disabled = true;
-        answerBox.style.display = 'block'; // Ensure the answer box is visible
+
+        // Remove existing answer input box if any
+        let existingInputBox = document.getElementById("answer-box");
+        if (existingInputBox) {
+            existingInputBox.remove();
+        }
+
+        // Disable the submit button during the display time
+        const submitButton = document.querySelector("[data-type='submit']");
+        submitButton.disabled = true;
 
         setTimeout(function() {
             questionArea.innerHTML = 'What was the order?';
-            answerBox.disabled = false;
-            answerBox.style.display = 'block'; // Ensure the answer box is visible again
-            answerBox.focus();
-            console.log('Answer box enabled');
+            // Recreate the answer input box
+            let newInputBox = document.createElement("input");
+            newInputBox.id = "answer-box";
+            newInputBox.type = "number";
+            newInputBox.style.display = 'block';
+            document.querySelector(".question-area").appendChild(newInputBox);
+            newInputBox.focus();
+
+            // Enable the submit button after the display time
+            submitButton.disabled = false;
+            console.log('Answer box recreated and enabled');
         }, time * 1000);
     }
 
     function checkAnswer() {
+        const answerBox = document.getElementById("answer-box");
         const userAnswer = answerBox.value;
 
         if (userAnswer === generatedNumber) {

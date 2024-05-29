@@ -1,10 +1,12 @@
 body {
     background-color: white;
-    font-family: "Raleway", sans-serif;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
     color: #445361;
     text-align: center;
-}
-
+    font-style: normal;
+  }
+  
 .heading {
     text-align: center;
     font-size: 2.5rem;
@@ -82,7 +84,7 @@ body {
 }
 
 .btn {
-    font-family: "Raleway", sans-serif;
+    font-family: "Permanent Marker", cursive;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: white;
