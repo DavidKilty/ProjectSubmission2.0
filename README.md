@@ -8,6 +8,7 @@
 ## Description
 This project is a web-based memory number game where users are presented with a random 9-digit number for a specific amount of time and then must recall and input the number correctly. The game aims to test and improve the user's visual numerical memory. Based from a game my mother created for me as a child, it was the best thing I could think of to create. It was built along sinde me doing my sample Love Maths project. As such it bares a lot of similarity to the sample project. 
 
+CONTACT IMAGE 
 
 ### Installation
 To install and run this project locally:
@@ -106,11 +107,35 @@ HTML and CSS structure:
 
 > }
 
+### Manual Teting
+
+I deployed it multiple times to reflect on my work.
+
+I used the below validator by entering the code manually: 
+
+For HTML, [](https://validator.w3.org/#validate_by_input)
+
+This returned 4 errors with my buttons, but the page still works as desired so I did not remedy issues. 
+
+For CSS, [](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+
+There were no issues found 
+
+Ultimately, I still have a passable accessibility score.
+
+CONTACT IMAGE 
  
 ### Credits
 
-Icons: FontAwesome / 
+Icons: FontAwesome 
 
 Fonts: Google Fonts / Permanent Marker 
 
 License: This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+
+I used the Code Institute guides and materials exhaustively. 
+
+I often used the Slack channel to see other students' tips on fixing issues and Googled problems, relying on such blogs as W3Schools, StackOverflow, and MDNWebDocs
+
+I struggled with the styling, sought advice from other coders.. 
