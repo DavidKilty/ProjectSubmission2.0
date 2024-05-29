@@ -64,15 +64,18 @@ E) The game will keep track of your correct and incorrect answers.
 JavaScript Event Listeners and DOM Manipulation:
 
  - Referenced from MDN Web Docs for handling button clicks and updating DOM elements.
-     
- "document.addEventListener("DOMContentLoaded", function() {
- });"
-   
+
+```
+ document.addEventListener("DOMContentLoaded", function() {
+ }); '''
+
+
  Generating Random Numbers without Repetition:
  
  - Referenced from W3Schools JavaScript Random for generating unique random numbers.
 
-  "function generateRandomNumber() {
+ ```bash
+  function generateRandomNumber() {
   const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   let number = '';
   while (number.length < 9) {
@@ -80,7 +83,7 @@ JavaScript Event Listeners and DOM Manipulation:
   number += digits.splice(randomIndex, 1);
   }
   return number;
-  }"
+  }
 
 HTML and CSS structure:
 
