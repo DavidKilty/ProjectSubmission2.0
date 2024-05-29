@@ -123,13 +123,18 @@ I used the below validators:
 
 For HTML, [Click]([https://validator.w3.org/#validate_by_input](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavidkilty.github.io%2FProjectSubmission2.0%2F))
 
-Originally, this returned 4 errors with my buttons, that they could not be children of Divs. So I changed the elements around the buttons, to Spans instead of Divs. That left me with a less desriable aestetic. But then, it shows four errors that Divs  But did not impact the function of the site. 
+Originally, this returned 4 errors with my buttons, that they could not be children of Divs. So I changed the elements around the buttons, to Spans instead of Divs. That left me with a less desriable aestetic. But then, it shows four errors that Divs are not allowed as child of elements of Buttons or Spans. But did not impact the function of the site. 
 
-For CSS, [Click](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+For CSS, [Click]([https://jigsaw.w3.org/css-validator/#validate_by_input](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdavidkilty.github.io%2FProjectSubmission2.0%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)) 
 
 There were no issues found 
 
 For JS, [Click](https://jshint.com/)
+
+There are 7 functions in this file.
+Function with the largest signature take 1 arguments, while the median is 0.
+Largest function has 16 statements in it, while the median is 9.
+The most complex function has a cyclomatic complexity value of 3 while the median is 1.
 
 ### Credits
 
