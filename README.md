@@ -37,22 +37,22 @@ document.addEventListener("DOMContentLoaded", function() {
  
  - Referenced from W3Schools JavaScript Random for generating unique random numbers.
 
-function generateRandomNumber() {
-    const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    let number = '';
-    while (number.length < 9) {
-        const randomIndex = Math.floor(Math.random() * digits.length);
-        number += digits.splice(randomIndex, 1);
-    }
-    return number;
-}
+> function generateRandomNumber() {
+>   const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+>   let number = '';
+>   while (number.length < 9) {
+>      const randomIndex = Math.floor(Math.random() * digits.length);
+>      number += digits.splice(randomIndex, 1);
+>  }
+>  return number;
+> }
 
 
 HTML and CSS structure:
 
 - Referenced from W3Schools HTML and W3Schools CSS for creating the basic layout and styling of the webpage.
  
-<div class="game-area">
+ <div class="game-area">
     <div class="controls-area">
         <!-- Button elements -->
     </div>
