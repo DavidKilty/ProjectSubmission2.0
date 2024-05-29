@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(function() {
             questionArea.innerHTML = 'What was the order?';
 <<<<<<< HEAD
-            // Recreate the answer input box
             let newInputBox = document.createElement("input");
             newInputBox.id = "answer-box";
             newInputBox.type = "number";
@@ -55,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector(".question-area").appendChild(newInputBox);
             newInputBox.focus();
 
-            // Enable the submit button after the display time
             submitButton.disabled = false;
             console.log('Answer box recreated and enabled');
 =======
