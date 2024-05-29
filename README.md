@@ -17,9 +17,13 @@ To install and run this project locally:
 ## Usage
 
 A) Click on one of the time buttons (60, 45, 30, 15 seconds).
+
 B) Memorize the 9-digit number that appears.
+
 C) Enter the number in the answer box after the time elapses.
+
 D) Click the "Submit Answer" button to check your answer.
+
 E) The game will keep track of your correct and incorrect answers.
 
 
