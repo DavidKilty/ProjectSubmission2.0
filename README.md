@@ -29,23 +29,31 @@ JavaScript Event Listeners and DOM Manipulation:
 
  - Referenced from MDN Web Docs for handling button clicks and updating DOM elements.
      
-> document.addEventListener("DOMContentLoaded", function() {
->
->   });
+>  document.addEventListener("DOMContentLoaded", function() {
+ 
+>  });
    
  Generating Random Numbers without Repetition:
  
  - Referenced from W3Schools JavaScript Random for generating unique random numbers.
 
-> function generateRandomNumber() {
+>  function generateRandomNumber() {
+
 >   const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 >   let number = '';
+
 >   while (number.length < 9) {
->      const randomIndex = Math.floor(Math.random() * digits.length);
->      number += digits.splice(randomIndex, 1);
+
+>   const randomIndex = Math.floor(Math.random() * digits.length);
+
+>   number += digits.splice(randomIndex, 1);
+
+>   }
+
+>   return number;
+
 >  }
->  return number;
-> }
 
 
 HTML and CSS structure:
