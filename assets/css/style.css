@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgba(187, 255, 248, 0.565);
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     color: #445361;
@@ -120,46 +120,46 @@ body {
 }
 
 .btn--blue {
-    border-color: blue;
-    color: blue;
+    border-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
 }
 
 .btn--blue:active,
 .btn--blue:hover {
-    background-color: darkblue;
+    background-color: rgb(139, 0, 132);
     color: white;
 }
 
 .btn--orange {
-    border-color: orange;
-    color: orange;
+    border-color: rgb(255, 0, 102);
+    color: rgb(255, 0, 102);
 }
 
 .btn--orange:active,
 .btn--orange:hover {
-    background-color: darkorange;
+    background-color: rgb(139, 0, 132);
     color: white;
 }
 
 .btn--red {
-    border-color: red;
-    color: red;
+    border-color: rgb(255, 0, 179);
+    color: rgb(255, 0, 179);
 }
 
 .btn--red:active,
 .btn--red:hover {
-    background-color: darkred;
+    background-color:rgb(139, 0, 132);
     color: white;
 }
 
 .btn--green {
-    border-color: green;
-    color: green;
+    border-color: rgb(122, 0, 128);
+    color: rgb(122, 0, 128);
 }
 
 .btn--green:active,
 .btn--green:hover {
-    background-color: darkgreen;
+    background-color: rgb(139, 0, 132);
     color: white;
 }
 
@@ -175,7 +175,7 @@ body {
     background-color: #0d1013;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 320px) {
     .controls-area {
         width: 100%;
         flex-direction: column;
