@@ -1,8 +1,13 @@
+
+
+
 # Memory Number Game
+
 
 
 ## Description
 This project is a web-based memory number game where users are presented with a random 9-digit number for a specific amount of time and then must recall and input the number correctly. The game aims to test and improve the user's visual numerical memory. Based from a game my mother created for me as a child, it was the best thing I could think of to create. It was built along sinde me doing my sample Love Maths project. As such it bares a lot of similarity to the sample project. 
+
 
 ### Installation
 To install and run this project locally:
@@ -59,12 +64,10 @@ JavaScript Event Listeners and DOM Manipulation:
 
 >  }
 
-
 HTML and CSS structure:
 
 - Referenced from W3Schools HTML and W3Schools CSS for creating the basic layout and styling of the webpage.
  
-
 > <div class="game-area">
    
 >   <div class="controls-area">
@@ -107,6 +110,7 @@ HTML and CSS structure:
 ### Credits
 
 Icons: FontAwesome / 
-Fonts: Google Fonts / Permanent Marker 
-License: This project is licensed under the MIT License - see the LICENSE.md file for details.
 
+Fonts: Google Fonts / Permanent Marker 
+
+License: This project is licensed under the MIT License - see the LICENSE.md file for details.
