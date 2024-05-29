@@ -71,7 +71,7 @@ body {
 #answer-box {
     border: 1px solid #445361;
     color: #445361;
-    display: inline-block; 
+    display: none; 
     height: 40px;
     width: 80px;
     font-size: 1.2rem;
@@ -214,7 +214,7 @@ body {
     #answer-box {
         border: 1px solid #445361;
         color: #445361;
-        display: inline-block;
+        display: none;
         height: 40px;
         width: 80px;
         font-size: 1.2rem;
