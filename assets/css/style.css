@@ -71,9 +71,9 @@ body {
     color: #445361;
     display: none; 
     height: 40px;
-    width: 80px;
+    width: 200px;
     font-size: 1.2rem;
-    margin: 10px, auto;
+    margin: 10px auto;
 }
 
 .scores {
@@ -176,6 +176,7 @@ body {
     .controls-area {
         width: 100%;
         flex-direction: column;
+        align-items: center;
     }
 
     .btn--big {
@@ -207,18 +208,7 @@ body {
     .answer-message {
         display: block;
     }
-
-    #answer-box {
-        border: 1px solid #445361;
-        color: #445361;
-        display: none;
-        height: 40px;
-        width: 80px;
-        font-size: 1.2rem;
-        margin-top: 10px;
-    }
     
-
     .btn--gray {
         margin-top: 10px;        
 

@@ -36,7 +36,7 @@ This section will allow you to interact with the game, using the different timer
 
 ### Answer section
 
-The answer box then appears after the timer is over and this is where you need to input the number. Yes, you could cheat and copy the number the Betim and input that the box, But where would the Fun be in that? 
+The answer box then appears after the timer is over and this is where you need to input the number. Yes, you could cheat and copy the number and input that to the box, but where would the Fun be in that? 
 
 ![contact image](assets/images/zoominanswerbox.png)
 
