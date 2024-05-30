@@ -123,7 +123,7 @@ I used the below validators:
 
 For HTML, [Click](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavidkilty.github.io%2FProjectSubmission2.0%2F)
 
-Originally, this returned 4 errors with my buttons, that they could not be children of Divs. So I changed the elements around the buttons, to Spans instead of Divs. That left me with a less desriable aestetic. But then, it shows four errors that Divs are not allowed as child of elements of Buttons or Spans. But did not impact the function of the site. 
+The button section of code had been built from the code I learned with my latest project at CodeInstitute. Originally, this returned 4 errors with my buttons, that they could not be children of Divs. So I changed the elements around the buttons, to Spans instead of Divs. That left me with a less desriable aestetic, as the spans were then a lot smaller, so I concealed this by changing their color. Then, it shows four errors that Divs are not allowed as child of elements of Buttons or Spans. Ultimately, this did not impact the function of the site, so I did not remedy it further. 
 
 For CSS, [Click](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdavidkilty.github.io%2FProjectSubmission2.0%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
@@ -135,6 +135,16 @@ There are 7 functions in this file.
 Function with the largest signature take 1 arguments, while the median is 0.
 Largest function has 16 statements in it, while the median is 9.
 The most complex function has a cyclomatic complexity value of 3 while the median is 1.
+
+## Deployment
+
+ The site was deployed to GitHub pages. The steps to deploy are as follows: 
+ 
+  A) In the GitHub repository, navigate to the Settings tab
+  B) From the source section drop-down menu, select the Master Branch
+  C) Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here https://github.com/DavidKilty/ProjectSubmission2.0.git
 
 ### Credits
 
