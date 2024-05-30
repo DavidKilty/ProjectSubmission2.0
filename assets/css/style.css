@@ -73,7 +73,7 @@ body {
     height: 40px;
     width: 80px;
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin: 10px, auto;
 }
 
 .scores {
@@ -114,7 +114,6 @@ body {
 .btn-label {
     font-size: 1.5rem;
     color: #445361;
-    margin-top: 10px;
 }
 
 .btn--blue {
@@ -162,7 +161,7 @@ body {
 }
 
 .btn--gray {
-    margin-top: 25px;
+    margin: 25px auto;
     background-color: #445361;
     border: 1px transparent;
     border-radius: 20px;
@@ -221,7 +220,7 @@ body {
     
 
     .btn--gray {
-        margin-top: 700px;        
+        margin-top: 10px;        
 
     }
 

@@ -14,35 +14,35 @@
         <img class="logo" src="assets/images/question-mark-logo.png" alt="logo"> Renumber 99
     </h1>
     <h3> Let's test your visual numerical memory, can you get 99 correct answers in a row?</h3>
-    <h3> You will nine didigt randoml number and you will need to type it in the box after the timer runs out!</h3>
+    <h3> You will see a nine didig random number and you will need to type it in the box after the timer runs out!</h3>
     <h3> Start with the 60 seconds, and reduce your time as you feel more confident.</h3>
 
-    <span class="game-area">
-        <span class="controls-area">
+    <div class="game-area">
+        <div class="controls-area">
             <button data-type="60" class="btn btn--big btn--green">
                 <i class="fas fa-clock"></i>
-                <div class="btn-label">60</div>
+                <span class="btn-label">60</span>
             </button>
             <button data-type="45" class="btn btn--big btn--blue">
                 <i class="fas fa-clock"></i>
-                <div class="btn-label">45</div>
+                <span class="btn-label">45</span>
             </button>
             <button data-type="30" class="btn btn--big btn--orange">
                 <i class="fas fa-clock"></i>
-                <div class="btn-label">30</div>
+                <span class="btn-label">30</span>
             </button>
             <button data-type="15" class="btn btn--big btn--red">
                 <i class="fas fa-clock"></i>
-                <div class="btn-label">15</div>
+                <span class="btn-label">15</span>
             </button>
-        </span>
+        </div>
         <div class="question-area">
             <span>What was the order?</span>
             <p class="answer-message">Enter Answer:</p>
             <input id="answer-box" type="number" disabled>
         </div>
         <button data-type="submit" class="btn btn--gray">Submit Answer</button>
-    </span>
+    </div>
 
     <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
