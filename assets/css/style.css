@@ -36,6 +36,7 @@ body {
 
 .question-area span {
     padding: 0 15px;
+    user-select: none;
 }
 
 .score-area {
@@ -113,49 +114,15 @@ body {
 
 .btn-label {
     font-size: 1.5rem;
-    color: #445361;
 }
 
 .btn--blue {
     border-color: rgb(17, 0, 255);
-    color: rgb(17, 0, 255);
+    color: #445361;
 }
 
 .btn--blue:active,
 .btn--blue:hover {
-    background-color: rgb(139, 0, 132);
-    color: white;
-}
-
-.btn--orange {
-    border-color: rgb(17, 0, 255);
-    color: rgb(17, 0, 255);
-}
-
-.btn--orange:active,
-.btn--orange:hover {
-    background-color: rgb(139, 0, 132);
-    color: white;
-}
-
-.btn--red {
-    border-color: rgb(17, 0, 255);
-    color: rgb(17, 0, 255);
-}
-
-.btn--red:active,
-.btn--red:hover {
-    background-color:rgb(139, 0, 132);
-    color: white;
-}
-
-.btn--green {
-    border-color: rgb(17, 0, 255);
-    color: rgb(17, 0, 255);
-}
-
-.btn--green:active,
-.btn--green:hover {
     background-color: rgb(139, 0, 132);
     color: white;
 }

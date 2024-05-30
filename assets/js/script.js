@@ -1,3 +1,5 @@
+// Dom element // 
+
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".controls-area button");
     const correctScore = document.getElementById("score");
@@ -13,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.querySelector("[data-type='submit']").addEventListener("click", checkAnswer);
+
+// Number generation function // 
 
     function generateRandomNumber() {
         const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -38,6 +42,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const submitButton = document.querySelector("[data-type='submit']");
         submitButton.disabled = true;
 
+// Set timer function // 
+
         setTimeout(function() {
             questionArea.innerHTML = 'What was the order?';
             let newInputBox = document.createElement("input");
@@ -55,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function checkAnswer() {
         const answerBox = document.getElementById("answer-box");
         const userAnswer = answerBox.value;
-
+// Score to 99 function // 
         if (userAnswer === generatedNumber) {
             correctScore.textContent = parseInt(correctScore.textContent) + 1;
             alert ('That was right!')

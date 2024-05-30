@@ -36,15 +36,15 @@ This section will allow you to interact with the game, using the different timer
 
 ### Answer section
 
-The answer box then appears after the timer is over and this is where you need to input the number. Yes, you could cheat and copy the number and input that to the box, but where would the Fun be in that? 
+The answer box then appears after the timer is over and this is where you need to input the number. Yes, you could cheat and copy the number and input that to the box, but where would the Fun be in that? So, I stopped that with some CSS. 
 
-![contact image](assets/images/zoominanswerbox.png)
+![contact image](assets/images/AnswerboxButtonZoom.png)
 
 ### Score section  
 
 This is where the user sees their scores. 99 is the goal of course . 
 
-![contact image](assets/images/fullscreenshotwithanswerbox.png)
+![contact image](assets/images/FullPagePopUp.png) 
    
 ## Usage
 
@@ -123,7 +123,7 @@ I used the below validators:
 
 For HTML, [Click](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavidkilty.github.io%2FProjectSubmission2.0%2F)
 
-The button section of code had been built from the code I learned with my latest project at CodeInstitute. Originally, this returned 4 errors with my buttons, that they could not be children of Divs. So I changed the elements around the buttons, to Spans instead of Divs. That left me with a less desriable aestetic, as the spans were then a lot smaller, so I concealed this by changing their color. Then, it shows four errors that Divs are not allowed as child of elements of Buttons or Spans. Ultimately, this did not impact the function of the site, so I did not remedy it further. 
+The button section of code had been built from the code I learned with my latest project at CodeInstitute. Originally, this returned 4 errors with my buttons, that Divs could not be children of buttons. So I changed the Divs inside the buttons to Spans. 
 
 For CSS, [Click](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdavidkilty.github.io%2FProjectSubmission2.0%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
@@ -141,7 +141,11 @@ The most complex function has a cyclomatic complexity value of 3 while the media
  The site was deployed to GitHub pages. The steps to deploy are as follows: 
  
   A) In the GitHub repository, navigate to the Settings tab
+
+
   B) From the source section drop-down menu, select the Master Branch
+
+
   C) Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
 The live link can be found here https://github.com/DavidKilty/ProjectSubmission2.0.git
@@ -149,8 +153,13 @@ The live link can be found here https://github.com/DavidKilty/ProjectSubmission2
 ### Credits
 
 Icons: FontAwesome 
+
+
 Fonts: Google Fonts
+
+
 License: This project is licensed under the MIT License - see the LICENSE.md file for details.
+
 
 I used the Code Institute guides and materials exhaustively. I often used the Slack channel to see other students' tips on fixing issues and Googled problems, relying on such blogs as W3Schools, StackOverflow, and MDNWebDocs
 
