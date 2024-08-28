@@ -136,6 +136,20 @@ Function with the largest signature take 1 arguments, while the median is 0.
 Largest function has 16 statements in it, while the median is 9.
 The most complex function has a cyclomatic complexity value of 3 while the median is 1.
 
+
+## User Feedback
+
+After receiving feedback from a user, they said "However, there is a bug where users can click the submit button without selecting a timer, incorrectly showing the 
+message "That was right" and increasing the correct score'. This can be seen in the capture below". 
+However, after testing again by deploying and using the final product, I could not see it. However, I could see an incorrect answer being recorded when pressing the submit 
+button without selecting a timer. So, I edited the JS Code to make these buttons only responsive after timer buttons had been chosen and making them unresponsive once the 
+answer had been submitted.  
+
+Another piece of user feedback was "Additionally, there's a performance issue where users can repeatedly click the timers, causing the "Answer Box" to be rendered multiple 
+times.  Users should be allowed to click the timer only once per question". This was a feature I intended as you can change the length of time you selected for the challenge. 
+However, taking on user feedback I have also frozen the timer buttons responsiveness once a timer has been selected. 
+
+
 ## Deployment
 
  The site was deployed to GitHub pages. The steps to deploy are as follows: 
