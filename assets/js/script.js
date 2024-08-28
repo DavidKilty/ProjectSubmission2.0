@@ -4,17 +4,37 @@ document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".controls-area button");
     const correctScore = document.getElementById("score");
     const incorrectScore = document.getElementById("incorrect");
+    const submitButton = document.querySelector("[data-type='submit']");
     let generatedNumber = "";
     let correctCount = 0;
 
+    // Initially block the submit button function //
+    submitButton.disabled = true;
+
     buttons.forEach(function(button) {
         button.addEventListener("click", function() {
+            // Disable all buttons after timer selected function // 
+            disableButtons();
             const time = parseInt(button.querySelector(".btn-label").textContent);
             generateAndDisplayNumber(time);
         });
     });
 
     document.querySelector("[data-type='submit']").addEventListener("click", checkAnswer);
+
+// Disbale all timer button function //
+    function disableButtons() {
+        buttons.forEach(function(button) {
+            button.disabled = true;
+        });
+    }
+
+// Enable all timer button function //
+    function enableButtons() {
+        buttons.forEach(function(button) {
+            button.disabled = false;
+        });
+    }
 
 // Number generation function // 
 
@@ -39,11 +59,9 @@ document.addEventListener("DOMContentLoaded", function() {
             existingInputBox.remove();
         }
 
-        const submitButton = document.querySelector("[data-type='submit']");
         submitButton.disabled = true;
 
-// Set timer function // 
-
+        // Set timer function // 
         setTimeout(function() {
             questionArea.innerHTML = 'What was the order?';
             let newInputBox = document.createElement("input");
@@ -53,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector(".question-area").appendChild(newInputBox);
             newInputBox.focus();
 
-            submitButton.disabled = false;
+            submitButton.disabled = false;  // Enable submit button after the timer runs out //
             console.log('Answer box recreated and enabled');
         }, time * 1000);
     }
@@ -61,10 +79,11 @@ document.addEventListener("DOMContentLoaded", function() {
     function checkAnswer() {
         const answerBox = document.getElementById("answer-box");
         const userAnswer = answerBox.value;
-// Score to 99 function // 
+
+        // Score to 99 function // 
         if (userAnswer === generatedNumber) {
             correctScore.textContent = parseInt(correctScore.textContent) + 1;
-            alert ('That was right!')
+            alert('That was right!')
             correctCount++;
             if (correctCount >= 99) {
                 alert('Congratulations!');
@@ -79,6 +98,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         answerBox.value = '';
         answerBox.disabled = true;
+        submitButton.disabled = true;  // Disable submit button after an answer function //
         console.log('Answer checked and box disabled');
+
+        // Enable agin timer button after answer check function //
+        enableButtons();
     }
 });
